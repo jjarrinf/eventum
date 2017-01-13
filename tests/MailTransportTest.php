@@ -21,11 +21,11 @@ class MailTransportTest extends TestCase
         Logger::initialize();
     }
 
-    public function test1()
+    public function testSimpleMail()
     {
         $transport = new MailTransport();
         $recipient = 'root@localhost';
-        $headers = [];
+        $headers = ['Subject: lol'];
         $body = 'nothing';
         $transport->send($recipient, $headers, $body);
     }
