@@ -5,7 +5,7 @@
 - ldap: respect `create_users` configuration (@glensc)
 - Fix bug creating new priority (@balsdorf)
 - add MailTransport class to encapsulate smtp transport (@glensc, #236, #234)
-- replace buggy `Mail_Helper::getEmailAddresses` with Zend\Mail based implementation (@glensc)
+- replace buggy `Mail_Helper::getEmailAddresses` with Zend\Mail based implementation (@glensc, #238)
 
 [3.1.10]: https://github.com/eventum/eventum/compare/v3.1.9...master
 
