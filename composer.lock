@@ -1034,8 +1034,8 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Doctrine\\Common\\Inflector\\": "lib/Doctrine/Common/Inflector",
-                    "Doctrine\\Inflector\\": "lib/Doctrine/Inflector"
+                    "Doctrine\\Inflector\\": "lib/Doctrine/Inflector",
+                    "Doctrine\\Common\\Inflector\\": "lib/Doctrine/Common/Inflector"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1589,6 +1589,7 @@
                 "collections",
                 "types"
             ],
+            "abandoned": true,
             "time": "2015-04-21T08:40:25+00:00"
         },
         {
@@ -1610,12 +1611,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "HTMLPurifier": "library/"
-                },
                 "files": [
                     "library/HTMLPurifier.composer.php"
                 ],
+                "psr-0": {
+                    "HTMLPurifier": "library/"
+                },
                 "exclude-from-classmap": [
                     "/library/HTMLPurifier/Language/"
                 ]
@@ -4474,6 +4475,7 @@
                     "type": "tidelift"
                 }
             ],
+            "abandoned": "symfony/error-handler",
             "time": "2022-01-02T09:41:36+00:00"
         },
         {
@@ -5131,16 +5133,16 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v1.18.3",
+            "version": "v1.19.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "d40a6b176b70ea323af2b08507319d1c417520fd"
+                "reference": "c82477240111bfe41a1067c9f0ab91d40bafa5b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/d40a6b176b70ea323af2b08507319d1c417520fd",
-                "reference": "d40a6b176b70ea323af2b08507319d1c417520fd",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/c82477240111bfe41a1067c9f0ab91d40bafa5b6",
+                "reference": "c82477240111bfe41a1067c9f0ab91d40bafa5b6",
                 "shasum": ""
             },
             "require": {
@@ -5188,7 +5190,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-27T10:24:58+00:00"
+            "time": "2022-12-20T07:19:24+00:00"
         },
         {
             "name": "symfony/framework-bundle",
@@ -6113,12 +6115,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Ctype\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -7936,6 +7938,7 @@
                 "idna",
                 "punycode"
             ],
+            "abandoned": true,
             "time": "2016-11-16T10:37:54+00:00"
         },
         {
