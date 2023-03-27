@@ -1034,8 +1034,8 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Doctrine\\Common\\Inflector\\": "lib/Doctrine/Common/Inflector",
-                    "Doctrine\\Inflector\\": "lib/Doctrine/Inflector"
+                    "Doctrine\\Inflector\\": "lib/Doctrine/Inflector",
+                    "Doctrine\\Common\\Inflector\\": "lib/Doctrine/Common/Inflector"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1589,6 +1589,7 @@
                 "collections",
                 "types"
             ],
+            "abandoned": true,
             "time": "2015-04-21T08:40:25+00:00"
         },
         {
@@ -1610,12 +1611,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "HTMLPurifier": "library/"
-                },
                 "files": [
                     "library/HTMLPurifier.composer.php"
                 ],
+                "psr-0": {
+                    "HTMLPurifier": "library/"
+                },
                 "exclude-from-classmap": [
                     "/library/HTMLPurifier/Language/"
                 ]
@@ -3154,43 +3155,40 @@
         },
         {
             "name": "phpxmlrpc/phpxmlrpc",
-            "version": "4.6.0",
+            "version": "4.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gggeek/phpxmlrpc.git",
-                "reference": "b9401ffa2174663e376dcbb3aadba09eb62d8d19"
+                "reference": "ac18e315ac200692f3b02c773036c24be0acbefa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gggeek/phpxmlrpc/zipball/b9401ffa2174663e376dcbb3aadba09eb62d8d19",
-                "reference": "b9401ffa2174663e376dcbb3aadba09eb62d8d19",
+                "url": "https://api.github.com/repos/gggeek/phpxmlrpc/zipball/ac18e315ac200692f3b02c773036c24be0acbefa",
+                "reference": "ac18e315ac200692f3b02c773036c24be0acbefa",
                 "shasum": ""
             },
             "require": {
                 "ext-xml": "*",
-                "php": "^5.3.0 || ^7.0 || ^8.0"
+                "php": "^5.4.0 || ^7.0 || ^8.0"
             },
             "conflict": {
-                "phpxmlrpc/extras": "<= 0.6.3"
+                "phpxmlrpc/extras": "<= 1.0.0-beta2",
+                "phpxmlrpc/jsonrpc": "<= 1.0.0-beta1"
             },
             "require-dev": {
-                "docbook/docbook-xsl": "^1.79",
                 "ext-curl": "*",
                 "ext-dom": "*",
                 "ext-mbstring": "*",
-                "ext-xsl": "*",
-                "indeyets/pake": "^1.99",
-                "phpunit/phpunit": "^5.0 || ^8.5.14",
+                "phpunit/phpunit": "^4.8 || ^5.0 || ^8.5.14",
                 "phpunit/phpunit-selenium": "*",
                 "yoast/phpunit-polyfills": "*"
             },
             "suggest": {
-                "ext-curl": "Needed for HTTPS and HTTP 1.1 support, NTLM Auth etc...",
+                "ext-curl": "Needed for HTTPS, HTTP2 and HTTP 1.1 support, NTLM Auth etc...",
                 "ext-mbstring": "Needed to allow reception of requests/responses in character sets other than ASCII,LATIN-1,UTF-8",
                 "ext-zlib": "Needed for sending compressed requests and receiving compressed responses, if cURL is not available",
-                "phpxmlrpc/extras": "Adds more featured Server classes and other useful bits",
-                "phpxmlrpc/jsonrpc": "Adds support for the JSON-RPC protocol",
-                "sami/sami": "Required for doc generation using pake. Version constraints: ^3.3 || ^4.1"
+                "phpxmlrpc/extras": "Adds more featured Server classes, including self-documenting and ajax-enabled servers",
+                "phpxmlrpc/jsonrpc": "Adds support for the JSON-RPC protocol"
             },
             "type": "library",
             "autoload": {
@@ -3209,7 +3207,7 @@
                 "xml-rpc",
                 "xmlrpc"
             ],
-            "time": "2021-12-09T18:28:20+00:00"
+            "time": "2023-02-22T12:25:19+00:00"
         },
         {
             "name": "pimple/pimple",
@@ -4474,6 +4472,7 @@
                     "type": "tidelift"
                 }
             ],
+            "abandoned": "symfony/error-handler",
             "time": "2022-01-02T09:41:36+00:00"
         },
         {
@@ -6113,12 +6112,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Ctype\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -7936,6 +7935,7 @@
                 "idna",
                 "punycode"
             ],
+            "abandoned": true,
             "time": "2016-11-16T10:37:54+00:00"
         },
         {
